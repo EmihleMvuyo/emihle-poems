@@ -6,6 +6,12 @@ body {
   background-position: center;
 }
 
+a {
+  color: rgba(27, 142, 208, 0.586);
+  font-weight: 550;
+  font-family: "Courier New", Courier, monospace;
+}
+
 h1 {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
@@ -22,7 +28,7 @@ form {
 
 .instructions {
   padding: 15px;
-  border: 1px solid rgba(39, 33, 66, 0.5);
+  border: 1px solid rgba(19, 19, 19, 0.5);
   width: 80%;
   font-size: 16px;
   border-radius: 50px;
@@ -39,4 +45,23 @@ form {
   font-size: 15px;
   border-radius: 50px;
   padding: 14px 24px;
+}
+
+.poem {
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 550;
+  background-color: rgba(212, 235, 249, 0.558);
+  padding: 20px;
+  line-height: 2;
+  border-left: 6px solid rgba(22, 154, 237, 0.542);
+  box-shadow: 0px 4px 30px 0px rgba(76, 175, 236, 0.542);
+}
+
+footer {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  font-weight: 550;
+  margin-top: 30px;
 }
