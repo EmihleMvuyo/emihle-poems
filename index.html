@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Emihle Poems</title>
   </head>
@@ -12,7 +13,7 @@
         <h1>Let's create AI poems together!</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator">
           <input
             type="text"
             placeholder="Enter the title of your favorite poem"
@@ -23,15 +24,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          All things bright and beautiful,
-          <br />
-          All creatures great and small,
-          <br />
-          All things wise and wonderful,
-          <br />
-          The Lord God made them all.
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         This project was coded by
@@ -41,5 +34,7 @@
         is hosted on <a href="https://emihle-poems.netlify.app/">Netlify</a>
       </footer>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
