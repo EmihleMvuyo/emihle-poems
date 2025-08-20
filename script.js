@@ -3,7 +3,7 @@ function displayPoem(response) {
   new Typewriter("#poem", {
     strings: [response.data.answer],
     autoStart: true,
-    delay: 1,
+    delay: 30,
     cursor: "",
   });
 }
@@ -18,9 +18,9 @@ function generatePoem(event) {
     "You are a renowned poet known for crafting short, vivid poems. Your task is to write a five-line poem based on the user's topic. Use basic HTML formatting with <br/> tags to separate each line. Keep the tone imaginative and expressive. Sign the poem with 'SheCodes AI'.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("generating poem");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class ="generating">⏳💓 Your love for poems is a poem in itself</div>`;
 
   axios.get(apiUrl).then(displayPoem);
 }
